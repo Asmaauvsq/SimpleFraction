@@ -295,14 +295,19 @@ Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la d
    "Format Document", ou raccourci Shift+Alt+F.
 
 1. Comment trouver la déclaration d'une variable ou méthode ?
-    > Répondre ici
+    >  Pour trouver la déclaration d'une variable/méthode : Ctrl+clic sur son nom, ou touche F12 ("Go to Definition").
 1. Comment insérer un bloc de code prédéfini (*snippet*) ?
-    > Répondre ici
+    > Pour insérer un snippet : on commence à taper le mot-clé (ex: "sout" pour 
+   System.out.println), VS Code propose automatiquement le snippet dans l'autocomplétion, on valide avec Tab ou Entrée.
 1. Comment renommer une classe dans l'ensemble du projet ?
-    > Répondre ici
+    > Pour renommer une classe dans tout le projet : clic droit sur son nom "Rename Symbol", ou raccourci F2, ce qui renomme automatiquement toutes 
+   les occurrences dans le projet.
 1. Comment exécuter le programme en lui passant un paramètre en ligne de commande ?
-    > Répondre ici
+    > Pour exécuter avec un paramètre en ligne de commande : dans le fichier launch.json (créé automatiquement par VS Code), on ajoute le paramètre dans le champ "args", ou directement en ligne de commande avec java Main monParametre.
 1. Comment déboguer le programme en visualisant le contenu d'une ou plusieurs variables ?
-    > Répondre ici
+    > on place un point d'arrêt (clic dans la marge à gauche 
+    d'une ligne), puis on lance "Run and Debug" (F5). L'exécution s'arrête 
+    au point d'arrêt et on peut visualiser les variables dans le panneau 
+    "Variables" à gauche.
 1. Quels paramètres ou fonctionnalités vous semblent particulièrement importants/utiles pour le développement Java ?
     > Répondre ici
