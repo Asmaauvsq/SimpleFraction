@@ -184,7 +184,12 @@ assert !f4.equals(f1);
 ```
 1. Ajoutez la comparaison de fractions selon l'ordre naturel (cf. [`java.lang.Comparable`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html)).
    ```Java
-    // Assertions pour tester la comparaison
+Fraction f6 = new Fraction(1, 2);
+Fraction f7 = new Fraction(3, 4);
+Fraction f8 = new Fraction(2, 4);
+assert f6.compareTo(f7) < 0;
+assert f7.compareTo(f6) > 0;
+assert f6.compareTo(f8) == 0;
     ```
 1. Faites hériter votre classe `Fraction` de la classe [`java.lang.Number`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Number.html) et complétez les méthodes
    ```Java
@@ -193,6 +198,21 @@ assert !f4.equals(f1);
     Number anotherNumber = new Fraction(1, 2);
     assert java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) < 1E-8;
     ```
+
+baich@Asmaa_pc MINGW64 ~/tp1 (main)
+$ javac Main.java Fraction.java
+
+baich@Asmaa_pc MINGW64 ~/tp1 (main)
+$ java -ea Main
+Q2 (constructeurs) OK : f1=3/4, f2=5/1, f3=0/1
+Q3 (constantes) OK : ZERO=0/1, UN=1/1
+Q4 (getters) OK : numerateur=3, denominateur=4
+Q5 (doubleValue) OK : f1.doubleValue()=0.75
+Q6 (add) OK : f1 + 1/4 = 16/16
+Q7 (equals) OK : f4.equals(f5)=true, f4.equals(f1)=false
+Q8 (compareTo) OK : f6<f7=true, f6==f8=true
+Q9 (Number) OK : 1 + 1/2 = 1.5
+
 
 ## Partie III (à faire à la maison) : révisions et perfectionnement *shell* et *IDE*
 ### Maîtriser le *shell* de commandes

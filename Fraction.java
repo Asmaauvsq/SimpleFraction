@@ -1,5 +1,5 @@
-public class Fraction implements Comparable<Fraction> {
-        private int denominateur;
+public class Fraction extends Number implements Comparable<Fraction> {
+private int numerateur; private int denominateur;
 
 public Fraction(int numerateur, int denominateur) {
     this.numerateur = numerateur;
@@ -26,9 +26,25 @@ public int getDenominateur() {
     return denominateur;
 }
 
-public double doubleValue() {
-    return (double) numerateur / denominateur;
-}
+@Override
+    public double doubleValue() {
+        return (double) numerateur / denominateur;
+    }
+
+    @Override
+    public int intValue() {
+        return (int) doubleValue();
+    }
+
+    @Override
+    public long longValue() {
+        return (long) doubleValue();
+    }
+
+    @Override
+    public float floatValue() {
+        return (float) doubleValue();
+    }
 
 public Fraction add(Fraction autre) {
     int nouveauNum = this.numerateur * autre.denominateur + autre.numerateur * this.denominateur;
@@ -37,9 +53,9 @@ public Fraction add(Fraction autre) {
 }
 
     @Override
-    public String toString() {
-        return "Je suis une fraction.";
-    }
+public String toString() {
+    return numerateur + "/" + denominateur;
+}
 
     // Q7 : égalité
     @Override
