@@ -38,7 +38,21 @@ baich@Asmaa_pc MINGW64 ~/tp1 (master)
 $ java Main
 Hello Fraction!
 
+baich@Asmaa_pc MINGW64 ~/tp1 (master)
+$ git add .
+
+baich@Asmaa_pc MINGW64 ~/tp1 (master)
+$ git commit -m "Ajout des classes Fraction et Main"
+[master (root-commit) f5e4526] Ajout des classes Fraction et Main
+ 5 files changed, 211 insertions(+)
+ create mode 100644 Fraction.class
+ create mode 100644 Fraction.java
+ create mode 100644 Main.class
+ create mode 100644 Main.java
+ create mode 100644 README.md
+
     ```
+    
 1. Ajoutez la méthode `toString` à la classe `Fraction` (cf. [`Object.toString`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#toString())) qui retournera la chaîne `"Je suis une fraction."` et modifiez la classe `Main` en conséquence;
 Validez les changements;
     ```Java
