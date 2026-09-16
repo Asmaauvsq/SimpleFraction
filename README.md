@@ -52,39 +52,77 @@ $ git commit -m "Ajout des classes Fraction et Main"
  create mode 100644 README.md
 
     ```
-    
+
 1. Ajoutez la méthode `toString` à la classe `Fraction` (cf. [`Object.toString`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#toString())) qui retournera la chaîne `"Je suis une fraction."` et modifiez la classe `Main` en conséquence;
 Validez les changements;
     ```Java
-    // Code pour tester toString
+baich@Asmaa_pc MINGW64 ~/tp1 (master)
+$ java Main
+Je suis une fraction.
+
+baich@Asmaa_pc MINGW64 ~/tp1 (master)
+$ git add .
+
+baich@Asmaa_pc MINGW64 ~/tp1 (master)
+$ git commit -m "Ajout de la méthode toString à Fraction"
+[master ae851fe] Ajout de la méthode toString à Fraction
+ 5 files changed, 21 insertions(+), 2 deletions(-)
     ```
 1. Publiez vos modifications sur le dépôt distant (cf. [Travailler avec des dépôts distants](https://git-scm.com/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants));
 Vous utiliserez le protocole `https` pour cela;
 Vérifiez avec le navigateur;
     ```bash
-    # Commandes pour publier les modifications
+git remote add origin https://github.com/Asmaauvsq/SimpleFraction.git
+git branch -M main
+git push -u origin main
     ```
 1. Sur la forge, ajoutez un fichier de documentation `README.md`.
 Quelle syntaxe est utilisée pour ce fichier ?
-    > Répondre ici
+    > Le fichier README.md utilise la syntaxe Markdown, un langage de balisage léger qui permet de mettre en forme du texte.
+
 1. Récupérez localement les modifications effectuées sur la forge.
-    ```bash
-    # Répondre ici
+    ```
+git pull origin main
     ```
 1. Ajoutez les répertoires et fichiers issus de la compilation aux fichiers ignorés par `git` (cf. [`.gitignore` pour Java](https://github.com/github/gitignore/blob/main/Java.gitignore));
     ```bash
-    # Copier ici le contenu de `.gitignore`
+# Fichiers compilés
+*.class
+*.jar
+*.war
+
+# Dossiers de build
+target/
+build/
+bin/
+out/
+
     ```
 1. Retirez les fichiers de configuration de l'IDE du projet;
     ```bash
-    # Répondre ici
+baich@Asmaa_pc MINGW64 ~/tp1 (main)
+$ git rm --cached Fraction.class Main.class
+rm 'Fraction.class'
+rm 'Main.class'
+
+baich@Asmaa_pc MINGW64 ~/tp1 (main)
+$ git commit -m "Retrait des fichiers compilés du suivi git"
+[main e283b78] Retrait des fichiers compilés du suivi git
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Fraction.class
+ delete mode 100644 Main.class
     ```
     Ajoutez-les aux fichiers ignorés par `git`.
-    ```bash
-    # Copier ici les modifications de `.gitignore`
+    ```
+# Fichiers de configuration VS Code
+.vscode/
     ```
 1. Configurez l'accès par clé publique/clé privée à la forge (cf. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
     > Expliquez la procédure de façon synthétique
+    > On génère une paire de clés SSH avec ssh-keygen, on copie la clé publique 
+> dans les paramètres "SSH keys" du compte GitHub, puis on utilise l'URL 
+> SSH (git@github.com:...) du dépôt pour s'authentifier automatiquement 
+> sans mot de passe.
 
 ## Partie II (à faire durant le TD) : compléter la classe `Fraction`
 Dans cet partie, vous compléterez les classes `Fraction` et `Main`.
