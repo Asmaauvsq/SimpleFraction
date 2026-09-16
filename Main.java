@@ -26,5 +26,13 @@ assert Math.abs(somme.doubleValue() - 1.0) < 1E-8;
         Fraction f5 = new Fraction(2, 4);
         assert f4.equals(f5);
         assert !f4.equals(f1);
+
+        // Q8 : test de la comparaison
+Fraction f6 = new Fraction(1, 2);
+Fraction f7 = new Fraction(3, 4);
+Fraction f8 = new Fraction(2, 4);
+assert f6.compareTo(f7) < 0;   
+assert f7.compareTo(f6) > 0;  
+assert f6.compareTo(f8) == 0;  
     }
 }

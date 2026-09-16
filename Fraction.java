@@ -1,6 +1,5 @@
-public class Fraction {
-    private int numerateur;
-    private int denominateur;
+public class Fraction implements Comparable<Fraction> {
+        private int denominateur;
 
 public Fraction(int numerateur, int denominateur) {
     this.numerateur = numerateur;
@@ -49,6 +48,15 @@ public Fraction add(Fraction autre) {
         if (!(obj instanceof Fraction)) return false;
         Fraction autre = (Fraction) obj;
         return this.numerateur * autre.denominateur == autre.numerateur * this.denominateur;
+    }
+
+    // q8 : 
+    @Override
+    public int compareTo(Fraction autre) {
+        double diff = this.doubleValue() - autre.doubleValue();
+        if (diff < 0) return -1;
+        if (diff > 0) return 1;
+        return 0;
     }
 
 }
