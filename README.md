@@ -274,19 +274,26 @@ Vous pouvez choisir l'IDE/éditeur de texte de votre choix.
 Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la documentations de l'IDE ([IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#developer-tools), [Visual Studio Code](https://code.visualstudio.com/docs), [Eclipse](https://help.eclipse.org/2020-09/index.jsp), …).
 
 1. Quels IDE ou éditeurs de texte utilisez-vous pour le développement Java ?
-    > Répondre ici
+    > J'utilise Visual Studio Code pour le développement Java
 
     Pour la suite, ne considérez que l'un de vos choix.
 1. Comment vérifier/définir que l'encodage utilisé est *UTF-8* ?
-    > Répondre ici
+    > Dans VS Code, l'encodage s'affiche et se modifie en bas à droite de la fenêtre (barre de statut), en cliquant sur l'indicateur d'encodage 
+
 1. Comment choisir le JDK à utiliser dans un projet ?
-    > Répondre ici
+    > Le JDK se choisit via l'extension "Extension Pack for Java", dans les paramètres (Ctrl+,) en cherchant "java.configuration.runtimes", ou via la palette de commandes (Ctrl+Shift+P) > "Java: Configure Java Runtime".
 1. Comment préciser la version Java des sources dans un projet ?
-    > Répondre ici
+    > elle se précise dans le fichier de configuration 
+   du projet (pom.xml pour Maven, avec la propriété <maven.compiler.source>), 
+   ou dans les paramètres VS Code via "java.configuration.updateBuildConfiguration".
 1. Comment ajouter une bibliothèque externe dans un projet ?
-    > Répondre ici
+    > en la déclarant comme dépendance dans 
+   pom.xml (Maven) ou build.gradle (Gradle), ou en ajoutant manuellement 
+
 1. Comment reformater un fichier source Java ?
-    > Répondre ici
+    > Pour reformater un fichier Java : clic droit dans l'éditeur 
+   "Format Document", ou raccourci Shift+Alt+F.
+
 1. Comment trouver la déclaration d'une variable ou méthode ?
     > Répondre ici
 1. Comment insérer un bloc de code prédéfini (*snippet*) ?
