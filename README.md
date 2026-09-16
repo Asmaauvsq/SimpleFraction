@@ -310,4 +310,4 @@ Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la d
     au point d'arrêt et on peut visualiser les variables dans le panneau 
     "Variables" à gauche.
 1. Quels paramètres ou fonctionnalités vous semblent particulièrement importants/utiles pour le développement Java ?
-    > Répondre ici
+    > Alors Les fonctionnalités les plus utiles pour moi sont l'autocomplétion intelligente (IntelliSense), le débogueur intégré, et l'intégration Git directement dans l'éditeur, qui évite de constamment basculer vers le terminal.
