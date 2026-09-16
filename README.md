@@ -255,13 +255,18 @@ diff fichier1.txt fichier2.txt
         ```
 1. Expliquez en une ou deux phrases le rôle de ces commandes et dans quel contexte elles peuvent être utiles pour un développeur.
     * `ssh`
-        > Répondre ici
+        >  sh : permet d'ouvrir une connexion sécurisée et chiffrée vers une machine  distante, très utilisé pour se connecter à des serveurs (comme Persée ici) ou exécuter des commandes à distance sans transmettre de mot de passe en clair.
+
     * `screen`/`tmux`
-        > Répondre ici
+        > permettent de garder des sessions de terminal actives même après déconnexion, et de gérer plusieurs terminaux dans une seule fenêtre. 
+
+> la coupure de connexion l'arrête.
     * `curl`/[HTTPie](https://httpie.org/)
-        > Répondre ici
-    * [jq](https://stedolan.github.io/jq/)
-        > Répondre ici
+curl/HTTPie : permettent d'envoyer des requêtes HTTP en ligne de commande (GET, POST, etc.), très utiles pour tester des APIs REST ou télécharger 
+
+> des fichiers depuis un script.
+* [jq](https://stedolan.github.io/jq/)
+        > un outil en ligne de commande pour parser, filtrer et transformer du JSON, très pratique combiné à curl pour extraire des informations précises d'une réponse d'API.
 
 ### Découverte de votre *IDE*
 Dans cet exercice, vous expliquerez en quelques phrases comment vous réalisez les actions ci-dessous dans votre IDE.
