@@ -27,6 +27,16 @@ public int getDenominateur() {
     return denominateur;
 }
 
+public double doubleValue() {
+    return (double) numerateur / denominateur;
+}
+
+public Fraction add(Fraction autre) {
+    int nouveauNum = this.numerateur * autre.denominateur + autre.numerateur * this.denominateur;
+    int nouveauDenom = this.denominateur * autre.denominateur;
+    return new Fraction(nouveauNum, nouveauDenom);
+}
+
     @Override
     public String toString() {
         return "Je suis une fraction.";

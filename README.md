@@ -165,12 +165,15 @@ public int getDenominateur() {
 }    ```
 1. Ajoutez une méthode de consultation de la valeur sous la forme d'un nombre en virgule flottante (méthode `doubleValue()`) (cf. [`java.lang.Number`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Number.html)),
    ```Java
-    // Assertions pour tester la conversion
-    ```
+assert Math.abs(f1.doubleValue() - 0.75) < 1E-8;
+
+```
 1. Ajoutez une méthode permettant l'addition de deux fractions (la méthode `add` prend en paramètre *une* fraction et *retourne* la somme de la fraction courante et du paramètre),
    ```Java
-    // Assertions pour tester l'addition
-    ```
+Fraction somme = f1.add(new Fraction(1, 4));
+assert Math.abs(somme.doubleValue() - 1.0) < 1E-8;
+
+```
 1. Ajoutez le test d'égalité entre fractions (deux fractions sont égales si elles représentent la même fraction réduite) (cf. [`java.lang.Object.equals`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object))),
    ```Java
     // Assertions pour tester l'égalité

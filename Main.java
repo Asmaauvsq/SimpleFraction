@@ -15,5 +15,10 @@ public static void main(String[] args) {
         // Q4 : test des getters
         assert f1.getNumerateur() == 3;
         assert f1.getDenominateur() == 4;
+
+        assert Math.abs(f1.doubleValue() - 0.75) < 1E-8;
+
+        Fraction somme = f1.add(new Fraction(1, 4));
+assert Math.abs(somme.doubleValue() - 1.0) < 1E-8;
     }
 }
