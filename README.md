@@ -176,8 +176,12 @@ assert Math.abs(somme.doubleValue() - 1.0) < 1E-8;
 ```
 1. Ajoutez le test d'égalité entre fractions (deux fractions sont égales si elles représentent la même fraction réduite) (cf. [`java.lang.Object.equals`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object))),
    ```Java
-    // Assertions pour tester l'égalité
-    ```
+Fraction f4 = new Fraction(1, 2);
+Fraction f5 = new Fraction(2, 4);
+assert f4.equals(f5);
+assert !f4.equals(f1);
+
+```
 1. Ajoutez la comparaison de fractions selon l'ordre naturel (cf. [`java.lang.Comparable`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html)).
    ```Java
     // Assertions pour tester la comparaison

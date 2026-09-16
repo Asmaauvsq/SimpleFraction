@@ -41,4 +41,14 @@ public Fraction add(Fraction autre) {
     public String toString() {
         return "Je suis une fraction.";
     }
+
+    // Q7 : égalité
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Fraction)) return false;
+        Fraction autre = (Fraction) obj;
+        return this.numerateur * autre.denominateur == autre.numerateur * this.denominateur;
+    }
+
 }

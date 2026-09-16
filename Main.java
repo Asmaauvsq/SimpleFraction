@@ -20,5 +20,11 @@ public static void main(String[] args) {
 
         Fraction somme = f1.add(new Fraction(1, 4));
 assert Math.abs(somme.doubleValue() - 1.0) < 1E-8;
+
+        // Q7 : égalité
+        Fraction f4 = new Fraction(1, 2);
+        Fraction f5 = new Fraction(2, 4);
+        assert f4.equals(f5);
+        assert !f4.equals(f1);
     }
 }
