@@ -221,36 +221,37 @@ Vous pouvez répondre en utilisant le shell de votre choix (*bash*, *Powershell*
 Pour répondre à ces questions, vous devez effectuer les recherches documentaires adéquates (livre, web, …).
 
 1. Quel OS et quel shell de commande utilisez-vous ?
-    > Répondre ici
+> J'utilise Windows 10/11, avec Git Bash comme émulateur de terminal bash (basé sur MinGW), qui permet d'exécuter des commandes Unix/Linux sous Windows.
+
 1. Quelle commande permet d'obtenir de l'aide ?
 Donnez un exemple.
     ```bash
-    # Répondre ici
+ls --help
     ```
 1. Donnez la ou les commandes shell permettant de
     1. afficher les fichiers d'un répertoire triés par taille (taille affichée lisiblement)
         ```bash
-        # Répondre ici
+ls -lhS
         ```
     1. compter le nombre de ligne d'un fichier
         ```bash
-        # Répondre ici
+wc -l Main.java
         ```
     1. afficher les lignes du fichier `Main.java` contenant la chaîne `uneVariable`
         ```bash
-        # Répondre ici
+grep "uneVariable" Main.java
         ```
     1. afficher récursivement les fichiers `.java` contenant la chaîne `uneVariable`
         ```bash
-        # Répondre ici
+grep -r "uneVariable" --include="*.java" .
         ```
     1. trouver les fichiers (pas les répertoires) nommés `README.md` dans une arborescence de répertoires
         ```bash
-        # Répondre ici
+find . -type f -name "README.md"
         ```
     1. afficher les différences entre deux fichiers textes
         ```bash
-        # Répondre ici
+diff fichier1.txt fichier2.txt
         ```
 1. Expliquez en une ou deux phrases le rôle de ces commandes et dans quel contexte elles peuvent être utiles pour un développeur.
     * `ssh`
