@@ -142,7 +142,12 @@ private int denominateur;
     * initialisation avec juste le numérateur (dénominateur égal à _1_),
     * initialisation sans argument (numérateur égal _0_ et dénominateur égal à _1_),
     ```Java
-    // Assertions pour tester les constructeurs (avec toString)
+Fraction f1 = new Fraction(3, 4);
+Fraction f2 = new Fraction(5);
+Fraction f3 = new Fraction();
+assert f1.toString().equals("3/4");
+assert f2.toString().equals("5/1");
+assert f3.toString().equals("0/1");
     ```
 1. Ajoutez les fractions constantes ZERO (0, 1) et UN (1, 1) (cf. [Constants in Java](https://www.baeldung.com/java-constants-good-practices)),
     ```Java
