@@ -1,0 +1,10 @@
+# Fichiers compilés
+*.class
+*.jar
+*.war
+
+# Dossiers de build
+target/
+build/
+bin/
+out/
