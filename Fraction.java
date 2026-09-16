@@ -17,8 +17,16 @@ public Fraction() {
 
  // Q3 : constantes
     public static final Fraction ZERO = new Fraction(0, 1);
-    public static final Fraction UN = new Fraction(1, 1)
-    
+    public static final Fraction UN = new Fraction(1, 1);
+
+    public int getNumerateur() {
+    return numerateur;
+}
+
+public int getDenominateur() {
+    return denominateur;
+}
+
     @Override
     public String toString() {
         return "Je suis une fraction.";
