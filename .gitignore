@@ -8,3 +8,6 @@ target/
 build/
 bin/
 out/
+
+# Fichiers de configuration VS Code
+.vscode/
